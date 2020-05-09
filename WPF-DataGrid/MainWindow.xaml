@@ -1,0 +1,70 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- CanUserAddRowsをtrueにすると自動的に下に空行が追加される -->
+        <DataGrid Name="dataGrid"
+              AutoGenerateColumns="False"
+                   CanUserAddRows = "false" SelectionChanged="dataGrid_SelectionChanged">
+
+
+            <DataGrid.Columns>
+                <!-- 結び付けたい変数名を{Binding 変数名}みたいな感じにすればおｋ-->
+                <DataGridTextColumn Header="名前"
+                                Binding="{Binding Name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="性別"
+                                Binding="{Binding Gender}"></DataGridTextColumn>
+                <DataGridTextColumn Header="年齢"
+                                Binding="{Binding Age}"></DataGridTextColumn>
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Button Grid.Row="1" Click="OnClickick">行を追加</Button>
+    </Grid>
+</Window>
+<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- CanUserAddRowsをtrueにすると自動的に下に空行が追加される -->
+        <DataGrid Name="dataGrid"
+              AutoGenerateColumns="False"
+                   CanUserAddRows = "false" SelectionChanged="dataGrid_SelectionChanged">
+
+
+            <DataGrid.Columns>
+                <!-- 結び付けたい変数名を{Binding 変数名}みたいな感じにすればおｋ-->
+                <DataGridTextColumn Header="名前"
+                                Binding="{Binding Name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="性別"
+                                Binding="{Binding Gender}"></DataGridTextColumn>
+                <DataGridTextColumn Header="年齢"
+                                Binding="{Binding Age}"></DataGridTextColumn>
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Button Grid.Row="1" Click="OnClickick">行を追加</Button>
+    </Grid>
+</Window>
