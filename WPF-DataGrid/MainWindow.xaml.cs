@@ -13,9 +13,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using static WpfApp.Human;
+using static WPF_DataGrid.Human;
 
-namespace WpfApp
+namespace WPF_DataGrid
 {
     /// <summary>
     /// MainWindow.xaml の相互作用ロジック
